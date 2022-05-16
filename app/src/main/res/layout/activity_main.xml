@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nexus_background"
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:id="@+id/usernameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="Enter a Username: "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameTextView"
+        android:layout_marginTop="20dp"
+        android:hint="Type Here..."
+        android:ellipsize="start"
+        android:inputType="textCapWords|textPersonName"
+        android:singleLine="true"
+        android:background="@drawable/roundish_bkg_edittext"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/continueBtn"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/usernameEditText"
+        android:background="@drawable/round_back_green10"
+        android:text="Continue"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+</RelativeLayout>
